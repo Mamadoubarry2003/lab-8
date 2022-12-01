@@ -1,0 +1,7 @@
+class person():
+    def_init_:
+        self.firstname='mamadou'
+        self.lastname='barry'
+        self.phone=''
+    def_str_:
+        print('the first name ',self.firstname,'the last name',self.lastname,'the phone number',self.phone)
