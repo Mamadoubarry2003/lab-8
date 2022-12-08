@@ -25,3 +25,75 @@ print(person1)
 print(person2)
 print(student1)
 print(student2)
+class Animal:
+    def __init__(self, food, sleep):
+        self.food = food
+        self.sleep = sleep
+
+    def eat(self):
+        print(f"The animal eats {self.food}.")
+
+    def sleep(self):
+        print(f"The animal sleeps for {self.sleep} hours.")
+
+class Canine(Animal):
+    def roam(self):
+        print("The canine roams around.")
+
+    def makeNoise(self):
+        print("The canine barks.")
+
+class Feline(Animal):
+    def roam(self):
+        print("The feline roams around.")
+
+    def makeNoise(self):
+        print("The feline meows.")
+
+class Cow(Animal):
+    def roam(self):
+        print("The cow roams around.")
+
+    def makeNoise(self):
+        print("The cow mooes.")
+
+class Wolf(Canine):
+    def makeNoise(self):
+        print("The wolf howls.")
+
+class Cat(Feline):
+    def makeNoise(self):
+        print("The cat purrs.")
+
+class Lion(Feline):
+    def makeNoise(self):
+        print("The lion roars.")
+
+class Dog(Canine):
+    def makeNoise(self):
+        print("The dog barks.")
+
+wolf1 = Wolf("meat", 8)
+wolf2 = Wolf("meat", 8)
+cat1 = Cat("fish", 12)
+cat2 = Cat("fish", 12)
+lion1 = Lion("meat", 12)
+lion2 = Lion("meat", 12)
+dog1 = Dog("dog food", 8)
+dog2 = Dog("dog food", 8)
+
+wolf1.eat()
+wolf1.roam()
+wolf1.makeNoise()
+
+cat1.eat()
+cat1.roam()
+cat1.makeNoise()
+
+lion1.eat()
+lion1.roam()
+lion1.makeNoise()
+
+dog1.eat()
+dog1.roam()
+dog1.makeNoise() 
